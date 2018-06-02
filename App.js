@@ -1,13 +1,24 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View, Button } from "react-native";
+import firebase from "react-native-firebase";
 
 export default class App extends React.Component {
+  firebase = () => {
+    firebase
+      .auth()
+      .signInAnonymously()
+      .then(user => {
+        alert(user.isAnonymous);
+      })
+      .catch(err => {
+        alert(err);
+      });
+  };
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Button onPress={this.firebase} title="Firebase" />
       </View>
     );
   }
@@ -16,8 +27,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

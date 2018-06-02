@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "31044491714",
+    "firebase_url": "https://aeonsider.firebaseio.com",
+    "project_id": "aeonsider",
+    "storage_bucket": "aeonsider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31044491714:android:97a8eeb49bcc8215",
+        "android_client_info": {
+          "package_name": "com.aeonsider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31044491714-4rbbpgo2931jp5g8reorn2ve884hj496.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "31044491714-4rbbpgo2931jp5g8reorn2ve884hj496.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnQWYonBxP9BBnOWo6GzCc9nKB2tKr2Pc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
